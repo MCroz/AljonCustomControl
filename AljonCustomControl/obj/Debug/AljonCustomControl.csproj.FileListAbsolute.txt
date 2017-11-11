@@ -4,3 +4,4 @@ C:\Users\Aljon\Desktop\ISAD\Full System\MyOwnControls\AljonCustomControl\AljonCu
 C:\Users\Aljon\Desktop\ISAD\Full System\MyOwnControls\AljonCustomControl\AljonCustomControl\obj\Debug\AljonCustomControl.csproj.GenerateResource.Cache
 C:\Users\Aljon\Desktop\ISAD\Full System\MyOwnControls\AljonCustomControl\AljonCustomControl\obj\Debug\AljonCustomControl.dll
 C:\Users\Aljon\Desktop\ISAD\Full System\MyOwnControls\AljonCustomControl\AljonCustomControl\obj\Debug\AljonCustomControl.pdb
+C:\Users\Aljon\Desktop\ISAD\Full System\MyOwnControls\AljonCustomControl\AljonCustomControl\obj\Debug\AljonCustomControl.csprojResolveAssemblyReference.cache
