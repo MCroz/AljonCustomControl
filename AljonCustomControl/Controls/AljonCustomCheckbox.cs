@@ -50,10 +50,30 @@ namespace AljonCustomControl.Controls
         //private int colorAlpha = 66;
         //private int backgroundAlpha = 138;
         private Color GetCheckBoxOffDisabledColor = Color.FromArgb(66, 0, 0, 0);
-        private Color AccentColor = Color.Blue; //color ng box pag chineck
-        private Color GetCheckboxOffColor = Color.FromArgb(138, 0, 0, 0); //color ng box pag walang check
+        private Color AccentColor = Color.FromArgb(64, 196, 255); //color ng box pag chineck
+        private Color GetCheckboxOffColor = Color.FromArgb(222, 0, 0, 0); //color ng box pag walang check
         private static Color DISABLED_OR_HINT_TEXT_BLACK = Color.FromArgb(66, 0, 0, 0);
         private static Brush DISABLED_OR_HINT_TEXT_BLACK_BRUSH = new SolidBrush(DISABLED_OR_HINT_TEXT_BLACK);
+
+        public Color CheckboxCheckedColor
+        {
+            get { return this.AccentColor; }
+            set
+            {
+                this.AccentColor = value;
+                Invalidate();
+            } 
+        }
+
+        public Color CheckboxUncheckedColor
+        {
+            get { return this.GetCheckboxOffColor; }
+            set
+            {
+                this.GetCheckboxOffColor = value;
+                Invalidate();
+            }
+        }
 
         private Color bakColor;
         public override Color BackColor
@@ -76,8 +96,17 @@ namespace AljonCustomControl.Controls
                 Invalidate();
             }
         }
-        //private Brush PRIMARY_TEXT_BLACK_BRUSH = new SolidBrush(PRIMARY_TEXT_BLACK);
 
+        private Color checkLineColor = Color.White;
+        public Color CheckLineColor
+        {
+            get { return this.checkLineColor; }
+            set
+            {
+                this.checkLineColor = value;
+                Invalidate();
+            }
+        }
 
         public AljonCustomCheckbox()
         {
@@ -220,7 +249,8 @@ namespace AljonCustomControl.Controls
             g.Clear(Color.Transparent);
 
             // draw the checkmark lines
-            using (var pen = new Pen(Parent.BackColor, 2))
+            //using (var pen = new Pen(Parent.BackColor, 2))
+            using (var pen = new Pen(checkLineColor, 2))
             {
                 g.DrawLines(pen, CHECKMARK_LINE);
             }
