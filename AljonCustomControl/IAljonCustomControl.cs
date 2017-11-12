@@ -12,4 +12,10 @@
         DOWN,
         OUT
     }
+
+    public enum TextboxMode
+    { 
+        STRING,
+        INTEGERS
+    }
 }

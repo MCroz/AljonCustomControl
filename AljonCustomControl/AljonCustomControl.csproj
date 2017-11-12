@@ -51,6 +51,9 @@
     <Compile Include="Controls\AljonContextMenuStrip.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Controls\AljonCustomButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Controls\AljonCustomCheckbox.cs">
       <SubType>Component</SubType>
     </Compile>

@@ -35,7 +35,6 @@ namespace AljonCustomControl.Controls
         public void Focus() { baseTextBox.Focus(); }
 
         private readonly AnimationManager animationManager;
-
         private readonly BaseTextBox baseTextBox;
 
         private Font AljonFont;
@@ -962,7 +961,7 @@ namespace AljonCustomControl.Controls
             animationManager.OnAnimationProgress += sender => Invalidate();
 
             AljonFont = Font;
-            foreColor = Color.Black;
+            foreColor = Color.FromArgb(55, 71, 79);
             underLineFocusedColor = Color.Black;
             underLineUnfocusedColor = Color.Gray;
             customBackColor = BackColor;
@@ -1068,6 +1067,20 @@ namespace AljonCustomControl.Controls
             private const char VisualStylePasswordChar = '\u25CF';
             private const char NonVisualStylePasswordChar = '\u002A';
 
+            private TextboxMode customTextboxMode;
+
+            public TextboxMode CustomTextboxMode
+            {
+                get
+                {
+                    return customTextboxMode;
+                }
+                set
+                {
+                    customTextboxMode = value;
+                }
+            }
+
             private string hint = string.Empty;
             public string Hint
             {
@@ -1134,6 +1147,16 @@ namespace AljonCustomControl.Controls
             public BaseTextBox()
             {
             }
+
+            protected override void OnKeyPress(KeyPressEventArgs e)
+            {
+                //base.OnKeyPress(e);
+                if (customTextboxMode == TextboxMode.INTEGERS)
+                {
+                    e.Handled = !(char.IsDigit(e.KeyChar) || e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Enter);
+                }
+                
+            }
         }
 
         #region Custom Properties ng Textbox
@@ -1198,6 +1221,17 @@ namespace AljonCustomControl.Controls
             {
                 this.AljonFont = value;
                 this.Invalidate();
+            }
+        }
+        public TextboxMode CustomTextboxMode
+        {
+            get 
+            {
+                return baseTextBox.CustomTextboxMode;
+            }
+            set
+            {
+                baseTextBox.CustomTextboxMode = value;
             }
         }
         #endregion
