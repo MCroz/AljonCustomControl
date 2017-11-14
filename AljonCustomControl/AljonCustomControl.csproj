@@ -39,6 +39,9 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="Transitions">
+      <HintPath>..\..\..\..\Transitions.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AljonFontManager.cs" />
@@ -65,6 +68,9 @@
     </Compile>
     <Compile Include="Controls\AljonCustomTabSelector.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\AljonNotification.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="DLLLoader.cs" />
     <Compile Include="DrawHelper.cs" />
