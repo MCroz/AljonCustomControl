@@ -22,6 +22,7 @@ namespace AljonCustomControl
         public Font ROBOTO_MEDIUM_11;
         public Font ROBOTO_MEDIUM_10;
         public Font ROBOTO_MEDIUM_13;
+        public Font ROBOTO_MEDIUM_20;
 
         public AljonFontManager()
         {
@@ -30,6 +31,7 @@ namespace AljonCustomControl
             ROBOTO_REGULAR_11 = new Font(LoadFont(Resources.Roboto_Regular), 11f);
             ROBOTO_MEDIUM_11 = new Font(LoadFont(Resources.Roboto_Medium), 11f);
             ROBOTO_MEDIUM_13 = new Font(LoadFont(Resources.Roboto_Medium), 13f);
+            ROBOTO_MEDIUM_20 = new Font(LoadFont(Resources.Roboto_Medium), 20f);
         }
 
         public FontFamily LoadFont(byte[] fontResource)

@@ -1,7 +1,6 @@
 C:\Users\Aljon\Desktop\ISAD\Full System\MyOwnControls\AljonCustomControl\AljonCustomControl\bin\Debug\AljonCustomControl.dll
-C:\Users\Aljon\Desktop\ISAD\Full System\MyOwnControls\AljonCustomControl\AljonCustomControl\bin\Debug\AljonCustomControl.pdb
 C:\Users\Aljon\Desktop\ISAD\Full System\MyOwnControls\AljonCustomControl\AljonCustomControl\obj\Debug\AljonCustomControl.Properties.Resources.resources
 C:\Users\Aljon\Desktop\ISAD\Full System\MyOwnControls\AljonCustomControl\AljonCustomControl\obj\Debug\AljonCustomControl.csproj.GenerateResource.Cache
 C:\Users\Aljon\Desktop\ISAD\Full System\MyOwnControls\AljonCustomControl\AljonCustomControl\obj\Debug\AljonCustomControl.dll
 C:\Users\Aljon\Desktop\ISAD\Full System\MyOwnControls\AljonCustomControl\AljonCustomControl\obj\Debug\AljonCustomControl.pdb
-C:\Users\Aljon\Desktop\ISAD\Full System\MyOwnControls\AljonCustomControl\AljonCustomControl\bin\Debug\Transitions.dll
+C:\Users\Aljon\Desktop\ISAD\Full System\MyOwnControls\AljonCustomControl\AljonCustomControl\bin\Debug\AljonCustomControl.pdb
